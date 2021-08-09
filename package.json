@@ -1,10 +1,12 @@
 {
   "name": "vanneswijaya.github.io",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://vanneswijaya.github.io",
   "scripts": {
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "dev": "vue-cli-service serve"
+    "lint": "vue-cli-service lint",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
