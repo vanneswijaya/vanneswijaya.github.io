@@ -11,10 +11,8 @@ module.exports = {
         160: "40rem",
       },
       colors: {
-        merah: "#ef6461",
-        kuning: "#ffc43d",
-        birutua: "#2364aa",
-        birumuda: "#9cf6f6",
+        kuning: "#fca311",
+        birutua: "#14213d",
       },
     },
   },
