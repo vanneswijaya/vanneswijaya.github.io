@@ -137,86 +137,91 @@
         </div>
       </div>
     </section>
-    <section class="bg-cover bg-center h-screen relative" :style="mountainpic">
-      <div class="absolute z-50 flex flex-col">
-        <div class="font-black text-kuning text-9xl pl-20 pt-20">
-          SKILLS
-        </div>
-        <div
-          ref="containerProg"
-          class="progress ml-20 mt-20 rounded-3xl transition-all duration-500 ease-in-out"
-        >
+    <div class="wrapper overflow-x-hidden overflow-y-hidden h-screen bg-fixed">
+      <section
+        class="parallax relative bg-cover bg-center h-full bg-fixed"
+        :style="mountainpic"
+      >
+        <div class="absolute z-50 flex flex-col">
+          <div class="font-black text-kuning text-9xl pl-20 pt-20">
+            SKILLS
+          </div>
           <div
-            ref="progress"
-            @click="langClick"
-            class="progress-value flex items-center rounded-3xl cursor-pointer hover:bg-birutua group transition-all duration-500 ease-in-out"
+            ref="containerProg"
+            class="progress ml-20 mt-20 rounded-3xl transition-all duration-500 ease-in-out"
           >
             <div
-              :class="{ 'opacity-100': !langlong }"
-              class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-500 ease-in-out"
+              ref="progress"
+              @click="langClick"
+              class="progress-value flex items-center rounded-3xl cursor-pointer hover:bg-birutua group transition-all duration-500 ease-in-out"
             >
-              LANGUAGES
-            </div>
-            <div
-              :class="{ 'opacity-100': langlong }"
-              class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-200 ease-in-out absolute grid grid-cols-2 gap-20"
-            >
-              <div class="flex flex-col">
-                <p>Python</p>
-                <p>Javascript</p>
+              <div
+                :class="{ 'opacity-100': !langlong }"
+                class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-500 ease-in-out"
+              >
+                LANGUAGES
               </div>
-              <div class="flex flex-col">
-                <p>HTML</p>
-                <p>CSS</p>
+              <div
+                :class="{ 'opacity-100': langlong }"
+                class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-200 ease-in-out absolute grid grid-cols-2 gap-20"
+              >
+                <div class="flex flex-col">
+                  <p>Python</p>
+                  <p>Javascript</p>
+                </div>
+                <div class="flex flex-col">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            ref="containerProg2"
+            class="progress ml-20 mt-5 rounded-3xl transition-all duration-500 ease-in-out"
+          >
+            <div
+              ref="progress2"
+              @click="toolClick"
+              class="progress-value flex items-center rounded-3xl hover:bg-birutua group transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div
+                :class="{ 'opacity-100': !toollong }"
+                class="opacity-0 text-5xl font-black text-birutua pl-10 absolute z-50 group-hover:text-kuning transition duration-500 ease-in-out"
+              >
+                TOOLS & FRAMEWORKS
+              </div>
+              <div
+                :class="{ 'opacity-100': toollong }"
+                class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-200 ease-in-out grid grid-cols-2 gap-20"
+              >
+                <div class="flex flex-col">
+                  <p>Vue.js</p>
+                  <p>GraphQL</p>
+                  <p>Strapi.js</p>
+                </div>
+                <div class="flex flex-col">
+                  <p>Tailwind CSS</p>
+                  <p>Git</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div
-          ref="containerProg2"
-          class="progress ml-20 mt-5 rounded-3xl transition-all duration-500 ease-in-out"
-        >
-          <div
-            ref="progress2"
-            @click="toolClick"
-            class="progress-value flex items-center rounded-3xl hover:bg-birutua group transition-all duration-500 ease-in-out cursor-pointer"
-          >
-            <div
-              :class="{ 'opacity-100': !toollong }"
-              class="opacity-0 text-5xl font-black text-birutua pl-10 absolute z-50 group-hover:text-kuning transition duration-500 ease-in-out"
-            >
-              TOOLS & FRAMEWORKS
-            </div>
-            <div
-              :class="{ 'opacity-100': toollong }"
-              class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-200 ease-in-out grid grid-cols-2 gap-20"
-            >
-              <div class="flex flex-col">
-                <p>Vue.js</p>
-                <p>GraphQL</p>
-                <p>Strapi.js</p>
-              </div>
-              <div class="flex flex-col">
-                <p>Tailwind CSS</p>
-                <p>Git</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="
-          bg-birutua
-          via-transparent
-          to-transparent
-          absolute
-          opacity-70
-          w-full
-          h-full
-          inset-0
-        "
-      ></div>
-    </section>
+          class="
+            bg-birutua
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+          "
+        ></div>
+      </section>
+    </div>
     <section class="bg-birutua h-screen"></section>
   </div>
 </template>
@@ -413,5 +418,21 @@ export default {
 .progress-value {
   background: #fca311;
   height: 90px;
+}
+
+.wrapper {
+  perspective: 2px;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
 }
 </style>
