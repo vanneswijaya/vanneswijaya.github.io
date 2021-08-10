@@ -3,8 +3,8 @@
     <section class="bg-birutua w-screen h-screen flex">
       <div class="flex flex-nowrap fixed">
         <div class="w-screen flex flex-col justify-center pl-32">
-          <div ref="hey" class="font-black text-kuning text-9xl">Hey,</div>
-          <div ref="letMe" class="font-black text-kuning text-9xl pt-10">
+          <div ref="hey" class="font-thin text-kuning text-9xl">Hey,</div>
+          <div ref="letMe" class="font-thin text-kuning text-9xl pt-10">
             Let me show you around.
           </div>
         </div>
@@ -142,13 +142,13 @@
         class="parallax relative bg-cover bg-center h-full bg-fixed"
         :style="mountainpic"
       >
-        <div class="absolute z-50 flex flex-col">
-          <div class="font-black text-kuning text-9xl pl-20 pt-20">
+        <div class="absolute z-50 flex flex-col items-center w-full">
+          <div class="font-black text-kuning text-9xl pt-20">
             SKILLS
           </div>
           <div
             ref="containerProg"
-            class="progress ml-20 mt-20 rounded-3xl transition-all duration-500 ease-in-out"
+            class="progress mt-20 rounded-3xl transition-all duration-500 ease-in-out"
           >
             <div
               ref="progress"
@@ -178,7 +178,7 @@
           </div>
           <div
             ref="containerProg2"
-            class="progress ml-20 mt-5 rounded-3xl transition-all duration-500 ease-in-out"
+            class="progress mt-5 rounded-3xl transition-all duration-500 ease-in-out"
           >
             <div
               ref="progress2"
@@ -222,6 +222,61 @@
         ></div>
       </section>
     </div>
+    <section class="bg-birutua h-full w-screen flex flex-col items-center">
+      <div class="font-black text-kuning mt-20 text-9xl">
+        EDUCATION
+      </div>
+      <div class="flex flex-col justify-center">
+        <div
+          ref="canisius"
+          class="w-screen h-full flex flex-row pt-40 justify-center px-20 transition-all duration-1000 ease-in-out"
+        >
+          <div class="font-thin text-kuning text-5xl">
+            <div class="font-extrabold text-7xl">Canisius College</div>
+            <div class="font-extrabold pt-10">2018 - 2021</div>
+            <div class="pt-10">
+              <ul>
+                <li>- Majoring in Natural Science</li>
+                <li>- President of Student Council (2020 - 2021)</li>
+                <li>- Received Pedro Arrupe Leadership Award</li>
+                <li>- Member of Canisius Computer Club</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://play-lh.googleusercontent.com/GiVgVn2OmdZV4-ch3bfh7Lsa7aVqUehQyf_FX1QJVveeHw74z-JosBWTrv73af3SOw"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          ref="cityu"
+          class="w-screen h-full flex flex-row pt-40 justify-center px-20 transition-all duration-1000 ease-in-out"
+        >
+          <div class="font-thin text-kuning text-5xl">
+            <div class="font-extrabold text-7xl">
+              City University of<br />
+              Hong Kong
+            </div>
+            <div class="font-extrabold pt-10">2021 - Present</div>
+            <div class="pt-10">
+              <ul>
+                <li>- Majoring in Computer Science (Freshman)</li>
+                <li>- Full Tuition Entrance Scholarship Awardee</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-160 h-160">
+            <img
+              src="https://www.cser.ac.uk/media/uploads/files/R073beefb0c7fb9a344a11ead80fd70b8.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-birutua h-screen"></section>
     <section class="bg-birutua h-screen"></section>
   </div>
 </template>
@@ -240,6 +295,8 @@ export default {
     const progress2 = ref(null);
     const containerProg = ref(null);
     const containerProg2 = ref(null);
+    const cityu = ref(null);
+    const canisius = ref(null);
 
     onMounted(() => {
       document.addEventListener("scroll", handleScroll);
@@ -262,6 +319,8 @@ export default {
         progress.value.style.width = ((scrollY - 4400) / 1000) * 100 + "%";
         progress2.value.style.width = ((scrollY - 4400) / 1000) * 100 + "%";
       }
+      canisius.value.style.opacity = scrollY - 6000;
+      cityu.value.style.opacity = scrollY - 6500;
     };
 
     const langlong = ref(false);
@@ -337,6 +396,8 @@ export default {
       toollong,
       containerProg,
       containerProg2,
+      cityu,
+      canisius,
     };
   },
 };
