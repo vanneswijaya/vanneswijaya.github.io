@@ -1,25 +1,34 @@
 <template>
   <div class="overflow-hidden">
-    <section class="bg-birutua w-screen h-screen flex">
+    <section class="bg-kuning w-screen h-screen flex">
       <div class="flex flex-nowrap fixed">
-        <div class="w-screen flex flex-col justify-center pl-32">
-          <div ref="hey" class="font-thin text-kuning text-9xl">Hey,</div>
-          <div ref="letMe" class="font-thin text-kuning text-9xl pt-10">
-            Let me show you around.
+        <div class="w-screen flex flex-col justify-center pl-28 pb-40">
+          <div
+            ref="hey"
+            class="font-thin text-kuning text-9xl absolute pl-90 z-50 flex flex-col"
+          >
+            <div>Vannes Wijaya</div>
+            <div class="text-5xl pt-10">Full-stack developer</div>
+            <div class="icon-scroll right-0"></div>
+            <div class="scroll-down right-0 text-xl">SCROLL DOWN</div>
           </div>
+          <div ref="letMe" class="waves"></div>
         </div>
-        <div ref="intro" class="w-screen h-screen grid grid-cols-2 py-20">
-          <div class="grid col-span-1">
-            <div class="font-black text-kuning text-9xl uppercase">
+        <div
+          ref="intro"
+          class="w-screen h-screen grid grid-cols-2 gap-x-5 py-20"
+        >
+          <div class="col-span-1 flex flex-col">
+            <div class="font-black text-birutua text-9xl uppercase pt-16">
               Nice to meet you!
             </div>
-            <div class="font-thin text-kuning text-7xl pt-10">
+            <div class="font-light text-birutua text-5xl pt-10">
               I'm <span class="font-extrabold">Vannes</span>,<br />
-              a software engineer and a computer science student based in
-              Jakarta.
+              a software engineer and a computer science student from Jakarta,
+              currently living in Hong Kong.
             </div>
           </div>
-          <div class="grid col-span-1 pt-20">
+          <div class="col-span-1 pt-20">
             <div
               class="w-128 h-128 rounded-full bg-cover bg-center"
               :style="profpic"
@@ -28,9 +37,9 @@
         </div>
       </div>
     </section>
-    <section class="bg-birutua h-screen"></section>
-    <section class="bg-birutua h-screen"></section>
-    <section class="bg-birutua h-screen"></section>
+    <section class="bg-kuning h-screen"></section>
+    <section class="bg-kuning h-screen"></section>
+    <section class="bg-kuning h-screen"></section>
     <section class="bg-kuning h-full w-screen pb-20 flex flex-col items-center">
       <div ref="works" class="font-black text-birutua text-9xl uppercase pt-20">
         My Works &
@@ -163,15 +172,31 @@
               </div>
               <div
                 :class="{ 'opacity-100': langlong }"
-                class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-200 ease-in-out absolute grid grid-cols-2 gap-20"
+                class="opacity-0 text-5xl font-black text-birutua pl-20 group-hover:text-kuning transition-all duration-200 ease-in-out absolute grid grid-cols-2 gap-20"
               >
-                <div class="flex flex-col">
-                  <p>Python</p>
-                  <p>Javascript</p>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+                    alt=""
+                  />
                 </div>
-                <div class="flex flex-col">
-                  <p>HTML</p>
-                  <p>CSS</p>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -193,16 +218,38 @@
               </div>
               <div
                 :class="{ 'opacity-100': toollong }"
-                class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-200 ease-in-out grid grid-cols-2 gap-20"
+                class="opacity-0 text-5xl font-black text-birutua pl-20 group-hover:text-kuning transition-all duration-200 ease-in-out grid grid-cols-3 gap-20"
               >
-                <div class="flex flex-col">
-                  <p>Vue.js</p>
-                  <p>GraphQL</p>
-                  <p>Strapi.js</p>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
+                    alt=""
+                  />
                 </div>
-                <div class="flex flex-col">
-                  <p>Tailwind CSS</p>
-                  <p>Git</p>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://static-00.iconduck.com/assets.00/strapi-icon-512x505-3hl7a1v3.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -222,18 +269,21 @@
         ></div>
       </section>
     </div>
-    <section class="bg-birutua h-full w-screen flex flex-col items-center">
+    <section class="bg-birutua h-screen w-screen flex flex-col items-center">
       <div class="font-black text-kuning mt-20 text-9xl">
         EDUCATION
       </div>
-      <div class="flex flex-col justify-center">
-        <div
-          ref="canisius"
-          class="w-screen h-full flex flex-row pt-40 justify-center px-20 transition-all duration-1000 ease-in-out"
-        >
-          <div class="font-thin text-kuning text-5xl">
-            <div class="font-extrabold text-7xl">Canisius College</div>
-            <div class="font-extrabold pt-10">2018 - 2021</div>
+      <div class="grid grid-cols-2 justify-items-center py-20 gap-x-20">
+        <div class="flex flex-col justify-center">
+          <div class="h-40 w-40">
+            <img
+              src="https://play-lh.googleusercontent.com/GiVgVn2OmdZV4-ch3bfh7Lsa7aVqUehQyf_FX1QJVveeHw74z-JosBWTrv73af3SOw"
+              alt=""
+            />
+          </div>
+          <div class="font-thin text-kuning text-3xl">
+            <div class="font-extrabold text-5xl">Canisius College</div>
+            <div class="font-extrabold">2018 - 2021</div>
             <div class="pt-10">
               <ul>
                 <li>- Majoring in Natural Science</li>
@@ -243,23 +293,20 @@
               </ul>
             </div>
           </div>
-          <div>
+        </div>
+        <div class="flex flex-col justify-center">
+          <div class="h-36 w-40">
             <img
-              src="https://play-lh.googleusercontent.com/GiVgVn2OmdZV4-ch3bfh7Lsa7aVqUehQyf_FX1QJVveeHw74z-JosBWTrv73af3SOw"
+              src="https://www.cser.ac.uk/media/uploads/files/R073beefb0c7fb9a344a11ead80fd70b8.png"
               alt=""
             />
           </div>
-        </div>
-        <div
-          ref="cityu"
-          class="w-screen h-full flex flex-row pt-40 justify-center px-20 transition-all duration-1000 ease-in-out"
-        >
-          <div class="font-thin text-kuning text-5xl">
-            <div class="font-extrabold text-7xl">
+          <div class="font-thin text-kuning text-3xl">
+            <div class="font-extrabold text-5xl">
               City University of<br />
               Hong Kong
             </div>
-            <div class="font-extrabold pt-10">2021 - Present</div>
+            <div class="font-extrabold">2021 - Present</div>
             <div class="pt-10">
               <ul>
                 <li>- Majoring in Computer Science (Freshman)</li>
@@ -267,17 +314,37 @@
               </ul>
             </div>
           </div>
-          <div class="w-160 h-160">
-            <img
-              src="https://www.cser.ac.uk/media/uploads/files/R073beefb0c7fb9a344a11ead80fd70b8.png"
-              alt=""
-            />
-          </div>
         </div>
       </div>
     </section>
-    <section class="bg-birutua h-screen"></section>
-    <section class="bg-birutua h-screen"></section>
+    <!-- <section class="bg-birutua h-screen"></section> -->
+    <section class="bg-kuning">
+      <div class="flex flex-col px-20 pt-20 pb-28 text-birutua">
+        <div class=" text-9xl font-black uppercase">Say hello.</div>
+        <div class="w-3/4 h-4 mt-5 bg-birutua"></div>
+        <div class="pt-20 font-extrabold flex flex-col">
+          <span class="text-3xl">Email :</span>
+          <span class="text-5xl">vanneswjya@gmail.com</span>
+        </div>
+        <div class="flex flex-row gap-x-10 pt-20">
+          <img
+            class="h-20 w-20"
+            src="https://image.flaticon.com/icons/png/512/25/25231.png"
+            alt=""
+          />
+          <img
+            class="h-20 w-20"
+            src="https://image.flaticon.com/icons/png/512/61/61109.png"
+            alt=""
+          />
+          <img
+            class="h-20 w-20"
+            src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -295,8 +362,6 @@ export default {
     const progress2 = ref(null);
     const containerProg = ref(null);
     const containerProg2 = ref(null);
-    const cityu = ref(null);
-    const canisius = ref(null);
 
     onMounted(() => {
       document.addEventListener("scroll", handleScroll);
@@ -311,7 +376,7 @@ export default {
       console.log(scrollY);
 
       hey.value.style.transform = "translateY(" + -scrollY + "px)";
-      letMe.value.style.transform = "translateY(" + scrollY + "px)";
+      letMe.value.style.transform = "translateY(" + -scrollY + "px)";
       intro.value.style.transform = "translateX(" + -scrollY + "px)";
       works.value.style.transform = "translateX(" + -(scrollY - 3100) + "px)";
       contrib.value.style.transform = "translateX(" + (scrollY - 3100) + "px)";
@@ -319,8 +384,6 @@ export default {
         progress.value.style.width = ((scrollY - 4400) / 1000) * 100 + "%";
         progress2.value.style.width = ((scrollY - 4400) / 1000) * 100 + "%";
       }
-      canisius.value.style.opacity = scrollY - 6000;
-      cityu.value.style.opacity = scrollY - 6500;
     };
 
     const langlong = ref(false);
@@ -396,14 +459,94 @@ export default {
       toollong,
       containerProg,
       containerProg2,
-      cityu,
-      canisius,
     };
   },
 };
 </script>
 
 <style scoped>
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  bottom: -125%;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: -145%;
+  right: -3%;
+}
+
+.icon-scroll {
+  width: 80px;
+  height: 140px;
+  box-shadow: inset 0 0 0 1px #fca311;
+  border-radius: 50px;
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #fca311;
+  margin-left: 32px;
+  top: 28px;
+  border-radius: 50px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0px;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.waves::before,
+.waves::after {
+  content: "";
+  position: absolute;
+  width: 250vw;
+  height: 250vw;
+  top: -65vw;
+  left: 50%;
+  border-radius: 44%;
+  transform: translate(-50%, -75%);
+}
+
+.waves::before {
+  background: rgba(51, 51, 51, 1);
+  animation: waves 8s linear infinite;
+}
+
+.waves::after {
+  background: #14213d;
+  animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
 .rotate {
   animation: rotation 8s infinite linear;
 }
