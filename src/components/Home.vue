@@ -60,11 +60,12 @@
             </div>
             <div class="grid grid-cols-2 px-20 pt-20">
               <div class="font-thin text-4xl text-white">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
-                architecto quae saepe sequi sapiente laboriosam, fugit eius
-                quibusdam ipsam dolore libero dolorum.
+                A prescription drugs and supplements database website in which
+                users can look for medicine availability in a particular city,
+                province, and/or pharmacy.
               </div>
               <div
+                @click="goToFarma()"
                 class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
               >
                 <div
@@ -116,11 +117,12 @@
             </div>
             <div class="grid grid-cols-2 px-20 pt-20">
               <div class="font-thin text-4xl text-white">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
-                architecto quae saepe sequi sapiente laboriosam, fugit eius
-                quibusdam ipsam dolore libero dolorum.
+                A corporate dummy website made with Vue 3, comprising elegant
+                web design, animations, and responsiveness. The content theme is
+                about an architectural studio.
               </div>
               <div
+                @click="goToArchio()"
                 class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
               >
                 <div
@@ -317,31 +319,56 @@
         </div>
       </div>
     </section>
-    <!-- <section class="bg-birutua h-screen"></section> -->
     <section class="bg-kuning">
       <div class="flex flex-col px-20 pt-20 pb-28 text-birutua">
         <div class=" text-9xl font-black uppercase">Say hello.</div>
         <div class="w-3/4 h-4 mt-5 bg-birutua"></div>
         <div class="pt-20 font-extrabold flex flex-col">
-          <span class="text-3xl">Email :</span>
-          <span class="text-5xl">vanneswjya@gmail.com</span>
+          <div class="text-3xl">Email :</div>
+          <div class="text-5xl z-50 cursor-pointer group w-128">
+            <a href="mailto:vanneswjya@gmail.com">vanneswjya@gmail.com</a>
+            <div
+              class="group-hover:w-96 w-0 h-2 mt-2 bg-birutua transition-all duration-500 ease-in-out"
+            ></div>
+          </div>
         </div>
         <div class="flex flex-row gap-x-10 pt-20">
-          <img
-            class="h-20 w-20"
-            src="https://image.flaticon.com/icons/png/512/25/25231.png"
-            alt=""
-          />
-          <img
-            class="h-20 w-20"
-            src="https://image.flaticon.com/icons/png/512/61/61109.png"
-            alt=""
-          />
-          <img
-            class="h-20 w-20"
-            src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png"
-            alt=""
-          />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/vanneswijaya"
+            class="z-50"
+          >
+            <img
+              class="h-20 w-20"
+              src="https://image.flaticon.com/icons/png/512/25/25231.png"
+              alt=""
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/vanneswijaya/"
+            class="z-50"
+          >
+            <img
+              class="h-20 w-20"
+              src="https://image.flaticon.com/icons/png/512/61/61109.png"
+              alt=""
+            />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/vanneswijaya/"
+            class="z-50"
+          >
+            <img
+              class="h-20 w-20"
+              src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png"
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -441,6 +468,14 @@ export default {
       };
     });
 
+    const goToArchio = () => {
+      location.href = "https://vanneswijaya.github.io/archio/";
+    };
+
+    const goToFarma = () => {
+      location.href = "https://farmaplus.kemkes.go.id";
+    };
+
     return {
       hey,
       letMe,
@@ -459,6 +494,8 @@ export default {
       toollong,
       containerProg,
       containerProg2,
+      goToArchio,
+      goToFarma,
     };
   },
 };
