@@ -30,7 +30,7 @@
           </div>
           <div class="col-span-1 pt-20">
             <div
-              class="w-128 h-128 rounded-full bg-cover bg-center"
+              class="w-128 h-128 rounded-full bg-cover bg-top"
               :style="profpic"
             ></div>
           </div>
@@ -42,10 +42,556 @@
     <section class="bg-kuning h-screen"></section>
     <section class="bg-kuning h-full w-screen pb-20 flex flex-col items-center">
       <div ref="works" class="font-black text-birutua text-9xl uppercase pt-20">
-        My Works &
+        Work
       </div>
       <div ref="contrib" class="font-black text-birutua text-9xl uppercase">
-        Contributions
+        Experience
+      </div>
+      <div class="grid grid-rows-2 w-full h-full mt-20 gap-10 p-20">
+        <div class="grid grid-cols-2 w-full h-full gap-10">
+          <div
+            class="bg-cover bg-center w-full h-160 mt-20 rounded-3xl group"
+            :style="bowtie"
+          >
+            <div
+              class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+            >
+              <div
+                class="flex flex-col absolute z-50 items-center justify-center text-center p-20 gap-y-10"
+              >
+                <div class="font-bold text-white text-4xl">
+                  Bowtie Life Insurance Company
+                </div>
+                <div class="font-thin text-4xl text-white">
+                  Incoming Software Engineer Intern
+                </div>
+                <div class="font-thin text-4xl text-white mt-10">
+                  June 2023 - August 2023
+                </div>
+              </div>
+              <div
+                class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+              ></div>
+              <div
+                class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+              ></div>
+            </div>
+          </div>
+          <div
+            class="bg-cover bg-center w-full h-160 mt-20 rounded-3xl group"
+            :style="gitstart"
+          >
+            <div
+              class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+            >
+              <div
+                class="flex flex-col absolute z-50 items-center justify-center text-center p-20 gap-y-10"
+              >
+                <div class="font-bold text-white text-4xl">
+                  GitStart (YC S19)
+                </div>
+                <div class="font-thin text-4xl text-white">
+                  Software Engineer Intern
+                </div>
+                <div class="font-thin text-4xl text-white mt-10">
+                  June 2022 - September 2022
+                </div>
+              </div>
+              <div
+                class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+              ></div>
+              <div
+                class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 w-full h-full gap-10">
+          <div
+            class="bg-cover w-full h-160 mt-20 rounded-3xl group"
+            :style="kemkes"
+          >
+            <div
+              class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+            >
+              <div
+                class="flex flex-col absolute z-50 items-center justify-center text-center p-20 gap-y-10"
+              >
+                <div class="font-bold text-white text-4xl">
+                  Indonesian Ministry of Health
+                </div>
+                <div class="font-thin text-4xl text-white">
+                  Software Engineer
+                </div>
+                <div class="font-thin text-4xl text-white mt-10">
+                  July 2021 - October 2021
+                </div>
+              </div>
+              <div
+                class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+              ></div>
+              <div
+                class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+              ></div>
+            </div>
+          </div>
+          <div
+            class="bg-cover bg-center w-full h-160 mt-20 rounded-3xl group"
+            :style="sshk"
+          >
+            <div
+              class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+            >
+              <div
+                class="flex flex-col absolute z-50 items-center justify-center text-center p-20 gap-y-10"
+              >
+                <div class="font-bold text-white text-4xl">
+                  Sneaker Surge HK
+                </div>
+                <div class="font-thin text-4xl text-white">
+                  Software Developer
+                </div>
+                <div class="font-thin text-4xl text-white mt-10">
+                  October 2021 - September 2022
+                </div>
+              </div>
+              <div
+                class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+              ></div>
+              <div
+                class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wrapper overflow-x-hidden overflow-y-hidden h-screen bg-fixed">
+      <section
+        class="parallax relative bg-cover bg-center h-screen bg-fixed"
+        :style="mountainpic"
+      >
+        <div class="absolute z-50 flex flex-col items-center w-full">
+          <div
+            ref="containerProg"
+            class="progress mt-40 rounded-3xl transition-all duration-500 ease-in-out"
+          >
+            <div
+              ref="progress"
+              @click="langClick"
+              class="progress-value flex items-center rounded-3xl cursor-pointer hover:bg-birutua group transition-all duration-500 ease-in-out"
+            >
+              <div
+                :class="{ 'opacity-100': !langlong }"
+                class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-500 ease-in-out"
+              >
+                LANGUAGES
+              </div>
+              <div
+                :class="{ 'opacity-100': langlong }"
+                class="opacity-0 text-5xl font-black text-birutua pl-20 group-hover:text-kuning transition-all duration-200 ease-in-out absolute grid grid-cols-5 gap-20"
+              >
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-24 w-28"
+                    src="https://pixiumdigital.com/wp-content/uploads/2022/05/logo-elixir.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-20"
+                    src="https://assets.stickpng.com/images/58480979cef1014c0b5e4901.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            ref="containerProg2"
+            class="progress mt-5 rounded-3xl transition-all duration-500 ease-in-out"
+          >
+            <div
+              ref="progress2"
+              @click="toolClick"
+              class="progress-value flex items-center rounded-3xl hover:bg-birutua group transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div
+                :class="{ 'opacity-100': !toollong }"
+                class="opacity-0 text-5xl font-black text-birutua pl-10 absolute z-50 group-hover:text-kuning transition duration-500 ease-in-out"
+              >
+                TOOLS & FRAMEWORKS
+              </div>
+              <div
+                :class="{ 'opacity-100': toollong }"
+                class="opacity-0 text-5xl font-black text-birutua pl-20 group-hover:text-kuning transition-all duration-200 ease-in-out grid grid-cols-5 gap-20"
+              >
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://static-00.iconduck.com/assets.00/strapi-icon-512x505-3hl7a1v3.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-32"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-32"
+                    src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-28 w-28"
+                    src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-y-10">
+                  <img
+                    class="h-28 w-28"
+                    src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            bg-birutua
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+          "
+        ></div>
+      </section>
+    </div>
+    <section class="bg-kuning h-full w-screen pb-20 flex flex-col items-center">
+      <div
+        ref="leader"
+        class="font-black text-birutua text-9xl uppercase pt-20"
+      >
+        Leadership &
+      </div>
+      <div ref="entre" class="font-black text-birutua text-9xl uppercase">
+        Projects
+      </div>
+      <div
+        class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
+        :style="civtek"
+      >
+        <div
+          class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+        >
+          <div class="flex flex-col absolute z-50 items-center">
+            <div class="font-black text-white text-8xl pt-20">
+              CIVTEK
+            </div>
+            <div class="grid grid-cols-2 px-20 pt-16">
+              <div class="font-thin text-4xl text-white">
+                I founded & lead the first ever 501(c)(3) licensed non-profit
+                software development agency and a cross-uni student tech society
+                in HK, managing over 35 core team members, serving a community
+                of 120+ tech enthusiasts.
+              </div>
+              <div
+                @click="goToCivtek()"
+                class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
+              >
+                <div
+                  class="font-black text-2xl pl-10 flex flex-col items-center"
+                >
+                  <div>VIEW</div>
+                  <div>WEBSITE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+          ></div>
+          <div
+            class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+          ></div>
+        </div>
+      </div>
+      <div
+        class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
+        :style="permisi"
+      >
+        <div
+          class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+        >
+          <div class="flex flex-col absolute z-50 items-center">
+            <div class="font-black text-white text-6xl pt-20">
+              PERMISI (CityU Indonesian Society)
+            </div>
+            <div class="grid grid-cols-2 px-20 pt-20">
+              <div class="font-thin text-4xl text-white">
+                As the president, I manage 25 people to run programs ( averaging
+                2 events + 2 YouTube contents per month ), serving 400+
+                community members ranging from active students to alumni
+              </div>
+              <div
+                @click="goToPermisi()"
+                class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
+              >
+                <div
+                  class="font-black text-2xl pl-10 flex flex-col items-center"
+                >
+                  <div>VIEW</div>
+                  <div>WEBSITE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+          ></div>
+          <div
+            class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+          ></div>
+        </div>
+      </div>
+      <div
+        class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
+        :style="stu"
+      >
+        <div
+          class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+        >
+          <div class="flex flex-col absolute z-50 items-center">
+            <div class="font-black text-white text-8xl pt-20">
+              STU
+            </div>
+            <div class="grid grid-cols-2 px-20 pt-20">
+              <div class="font-thin text-4xl text-white">
+                Intercurrency digital wallet mobile application, won the
+                PolyHack 2022 1st Place Winner in Fintech Category (Best Fintech
+                Award)
+              </div>
+              <div
+                @click="goToStu()"
+                class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
+              >
+                <div
+                  class="font-black text-2xl pl-10 flex flex-col items-center"
+                >
+                  <div>VIEW</div>
+                  <div>PROJECT</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+          ></div>
+          <div
+            class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+          ></div>
+        </div>
       </div>
       <div
         class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
@@ -148,177 +694,6 @@
         </div>
       </div>
     </section>
-    <div class="wrapper overflow-x-hidden overflow-y-hidden h-screen bg-fixed">
-      <section
-        class="parallax relative bg-cover bg-center h-full bg-fixed"
-        :style="mountainpic"
-      >
-        <div class="absolute z-50 flex flex-col items-center w-full">
-          <div class="font-black text-kuning text-9xl pt-20">
-            SKILLS
-          </div>
-          <div
-            ref="containerProg"
-            class="progress mt-20 rounded-3xl transition-all duration-500 ease-in-out"
-          >
-            <div
-              ref="progress"
-              @click="langClick"
-              class="progress-value flex items-center rounded-3xl cursor-pointer hover:bg-birutua group transition-all duration-500 ease-in-out"
-            >
-              <div
-                :class="{ 'opacity-100': !langlong }"
-                class="opacity-0 text-5xl font-black text-birutua pl-10 group-hover:text-kuning transition-all duration-500 ease-in-out"
-              >
-                LANGUAGES
-              </div>
-              <div
-                :class="{ 'opacity-100': langlong }"
-                class="opacity-0 text-5xl font-black text-birutua pl-20 group-hover:text-kuning transition-all duration-200 ease-in-out absolute grid grid-cols-2 gap-20"
-              >
-                <div class="flex flex-col gap-y-10">
-                  <img
-                    class="h-28 w-28"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-28 w-28"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex flex-col gap-y-10">
-                  <img
-                    class="h-28 w-28"
-                    src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-28 w-28"
-                    src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            ref="containerProg2"
-            class="progress mt-5 rounded-3xl transition-all duration-500 ease-in-out"
-          >
-            <div
-              ref="progress2"
-              @click="toolClick"
-              class="progress-value flex items-center rounded-3xl hover:bg-birutua group transition-all duration-500 ease-in-out cursor-pointer"
-            >
-              <div
-                :class="{ 'opacity-100': !toollong }"
-                class="opacity-0 text-5xl font-black text-birutua pl-10 absolute z-50 group-hover:text-kuning transition duration-500 ease-in-out"
-              >
-                TOOLS & FRAMEWORKS
-              </div>
-              <div
-                :class="{ 'opacity-100': toollong }"
-                class="opacity-0 text-5xl font-black text-birutua pl-20 group-hover:text-kuning transition-all duration-200 ease-in-out grid grid-cols-3 gap-20"
-              >
-                <div class="flex flex-col gap-y-10">
-                  <img
-                    class="h-28 w-28"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-28 w-28"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex flex-col gap-y-10">
-                  <img
-                    class="h-28 w-28"
-                    src="https://static-00.iconduck.com/assets.00/strapi-icon-512x505-3hl7a1v3.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-28 w-28"
-                    src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="flex flex-col gap-y-10">
-                  <img
-                    class="h-28 w-28"
-                    src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="
-            bg-birutua
-            via-transparent
-            to-transparent
-            absolute
-            opacity-70
-            w-full
-            h-full
-            inset-0
-          "
-        ></div>
-      </section>
-    </div>
-    <section class="bg-birutua h-screen w-screen flex flex-col items-center">
-      <div class="font-black text-kuning mt-20 text-9xl">
-        EDUCATION
-      </div>
-      <div class="grid grid-cols-2 justify-items-center py-20 gap-x-20">
-        <div class="flex flex-col justify-center">
-          <div class="h-40 w-40">
-            <img
-              src="https://play-lh.googleusercontent.com/GiVgVn2OmdZV4-ch3bfh7Lsa7aVqUehQyf_FX1QJVveeHw74z-JosBWTrv73af3SOw"
-              alt=""
-            />
-          </div>
-          <div class="font-thin text-kuning text-3xl">
-            <div class="font-extrabold text-5xl">Canisius College</div>
-            <div class="font-extrabold">2018 - 2021</div>
-            <div class="pt-10">
-              <ul>
-                <li>- Majoring in Natural Science</li>
-                <li>- President of Student Council (2020 - 2021)</li>
-                <li>- Received Pedro Arrupe Leadership Award</li>
-                <li>- Member of Canisius Computer Club</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col justify-center">
-          <div class="h-36 w-40">
-            <img
-              src="https://www.cser.ac.uk/media/uploads/files/R073beefb0c7fb9a344a11ead80fd70b8.png"
-              alt=""
-            />
-          </div>
-          <div class="font-thin text-kuning text-3xl">
-            <div class="font-extrabold text-5xl">
-              City University of<br />
-              Hong Kong
-            </div>
-            <div class="font-extrabold">2021 - Present</div>
-            <div class="pt-10">
-              <ul>
-                <li>- Majoring in Computer Science (Freshman)</li>
-                <li>- Full Tuition Entrance Scholarship Awardee</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="bg-kuning">
       <div class="flex flex-col px-20 pt-20 pb-28 text-birutua">
         <div class=" text-9xl font-black uppercase">Say hello.</div>
@@ -341,7 +716,7 @@
           >
             <img
               class="h-20 w-20"
-              src="https://image.flaticon.com/icons/png/512/25/25231.png"
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
               alt=""
             />
           </a>
@@ -353,7 +728,7 @@
           >
             <img
               class="h-20 w-20"
-              src="https://image.flaticon.com/icons/png/512/61/61109.png"
+              src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
               alt=""
             />
           </a>
@@ -467,6 +842,41 @@ export default {
         backgroundImage: `url(${require("../assets/archiopic.png")})`,
       };
     });
+    const bowtie = computed(() => {
+      return {
+        backgroundImage: `url(${require("../assets/bowtie.png")})`,
+      };
+    });
+    const gitstart = computed(() => {
+      return {
+        backgroundImage: `url(${require("../assets/gitstart.png")})`,
+      };
+    });
+    const kemkes = computed(() => {
+      return {
+        backgroundImage: `url(${require("../assets/kemkes.png")})`,
+      };
+    });
+    const sshk = computed(() => {
+      return {
+        backgroundImage: `url(${require("../assets/sshk.png")})`,
+      };
+    });
+    const civtek = computed(() => {
+      return {
+        backgroundImage: `url(${require("../assets/civtek.png")})`,
+      };
+    });
+    const permisi = computed(() => {
+      return {
+        backgroundImage: `url(${require("../assets/permisi.png")})`,
+      };
+    });
+    const stu = computed(() => {
+      return {
+        backgroundImage: `url(${require("../assets/stu.png")})`,
+      };
+    });
 
     const goToArchio = () => {
       location.href = "https://vanneswijaya.github.io/archio/";
@@ -474,6 +884,15 @@ export default {
 
     const goToFarma = () => {
       location.href = "https://farmaplus.kemkes.go.id";
+    };
+    const goToCivtek = () => {
+      location.href = "https://civtek.dev";
+    };
+    const goToPermisi = () => {
+      location.href = "https://permisi.hk";
+    };
+    const goToStu = () => {
+      location.href = "https://github.com/vanneswijaya/stu";
     };
 
     return {
@@ -496,6 +915,16 @@ export default {
       containerProg2,
       goToArchio,
       goToFarma,
+      goToCivtek,
+      goToPermisi,
+      goToStu,
+      bowtie,
+      gitstart,
+      kemkes,
+      sshk,
+      civtek,
+      permisi,
+      stu,
     };
   },
 };
