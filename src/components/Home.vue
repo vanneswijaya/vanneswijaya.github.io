@@ -63,7 +63,7 @@
                   Bowtie Life Insurance Company
                 </div>
                 <div class="font-thin text-4xl text-white">
-                  Incoming Software Engineer Intern
+                  Software Engineer Intern
                 </div>
                 <div class="font-thin text-4xl text-white mt-10">
                   June 2023 - August 2023
@@ -288,18 +288,6 @@
                   <img
                     class="h-28 w-28"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex flex-col gap-y-10">
-                  <img
-                    class="h-24 w-28"
-                    src="https://pixiumdigital.com/wp-content/uploads/2022/05/logo-elixir.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-28 w-20"
-                    src="https://assets.stickpng.com/images/58480979cef1014c0b5e4901.png"
                     alt=""
                   />
                 </div>
