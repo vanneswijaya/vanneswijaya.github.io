@@ -42,35 +42,47 @@
     <section class="bg-kuning h-screen"></section>
     <section class="bg-kuning h-full w-screen pb-20 flex flex-col items-center">
       <div ref="works" class="font-black text-birutua text-9xl uppercase pt-20">
-        Work
+        Projects &
       </div>
       <div ref="contrib" class="font-black text-birutua text-9xl uppercase">
-        Experience
+        Leadership
       </div>
-      <div class="grid grid-rows-2 w-full h-full mt-20 gap-10 p-20">
-        <div class="grid grid-cols-2 w-full h-full gap-10">
+      <section
+        class="bg-kuning h-full w-screen pb-20 flex flex-col items-center"
+      >
+        <div
+          class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
+          :style="civtek"
+        >
           <div
-            class="bg-cover bg-center w-full h-160 mt-20 rounded-3xl group"
-            :style="bowtie"
+            class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
           >
-            <div
-              class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-            >
-              <div
-                class="flex flex-col absolute z-50 items-center justify-center text-center p-20 gap-y-10"
-              >
-                <div class="font-bold text-white text-4xl">
-                  Bowtie Life Insurance Company
-                </div>
+            <div class="flex flex-col absolute z-50 items-center">
+              <div class="font-black text-white text-8xl pt-20">
+                CIVTEK
+              </div>
+              <div class="grid grid-cols-2 px-20 pt-16">
                 <div class="font-thin text-4xl text-white">
-                  Software Engineer Intern
+                  I founded & lead the first ever 501(c)(3) licensed non-profit
+                  software development agency and a cross-uni student tech
+                  society in HK, managing over 35 core team members, serving a
+                  community of 120+ tech enthusiasts.
                 </div>
-                <div class="font-thin text-4xl text-white mt-10">
-                  June 2023 - August 2023
+                <div
+                  @click="goToCivtek()"
+                  class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
+                >
+                  <div
+                    class="font-black text-2xl pl-10 flex flex-col items-center"
+                  >
+                    <div>VIEW</div>
+                    <div>WEBSITE</div>
+                  </div>
                 </div>
               </div>
-              <div
-                class="
+            </div>
+            <div
+              class="
             bg-black
             absolute
             opacity-50
@@ -79,9 +91,9 @@
             inset-0
             rounded-3xl
           "
-              ></div>
-              <div
-                class="
+            ></div>
+            <div
+              class="
             bg-gradient-to-b
             from-black
             via-transparent
@@ -93,80 +105,41 @@
             inset-0
             rounded-3xl
           "
-              ></div>
-            </div>
-          </div>
-          <div
-            class="bg-cover bg-center w-full h-160 mt-20 rounded-3xl group"
-            :style="gitstart"
-          >
-            <div
-              class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-            >
-              <div
-                class="flex flex-col absolute z-50 items-center justify-center text-center p-20 gap-y-10"
-              >
-                <div class="font-bold text-white text-4xl">
-                  GitStart (YC S19)
-                </div>
-                <div class="font-thin text-4xl text-white">
-                  Software Engineer Intern
-                </div>
-                <div class="font-thin text-4xl text-white mt-10">
-                  June 2022 - September 2022
-                </div>
-              </div>
-              <div
-                class="
-            bg-black
-            absolute
-            opacity-50
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-              ></div>
-              <div
-                class="
-            bg-gradient-to-b
-            from-black
-            via-transparent
-            to-transparent
-            absolute
-            opacity-70
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-              ></div>
-            </div>
+            ></div>
           </div>
         </div>
-        <div class="grid grid-cols-2 w-full h-full gap-10">
+        <div
+          class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
+          :style="permisi"
+        >
           <div
-            class="bg-cover w-full h-160 mt-20 rounded-3xl group"
-            :style="kemkes"
+            class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
           >
-            <div
-              class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-            >
-              <div
-                class="flex flex-col absolute z-50 items-center justify-center text-center p-20 gap-y-10"
-              >
-                <div class="font-bold text-white text-4xl">
-                  Indonesian Ministry of Health
-                </div>
+            <div class="flex flex-col absolute z-50 items-center">
+              <div class="font-black text-white text-8xl pt-20">
+                PERMISI
+              </div>
+              <div class="grid grid-cols-2 px-20 pt-20">
                 <div class="font-thin text-4xl text-white">
-                  Software Engineer
+                  As the president, I manage 25 people to run programs (
+                  averaging 2 events + 2 YouTube contents per month ), serving
+                  400+ community members ranging from active students to alumni
                 </div>
-                <div class="font-thin text-4xl text-white mt-10">
-                  July 2021 - October 2021
+                <div
+                  @click="goToPermisi()"
+                  class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
+                >
+                  <div
+                    class="font-black text-2xl pl-10 flex flex-col items-center"
+                  >
+                    <div>VIEW</div>
+                    <div>WEBSITE</div>
+                  </div>
                 </div>
               </div>
-              <div
-                class="
+            </div>
+            <div
+              class="
             bg-black
             absolute
             opacity-50
@@ -175,9 +148,9 @@
             inset-0
             rounded-3xl
           "
-              ></div>
-              <div
-                class="
+            ></div>
+            <div
+              class="
             bg-gradient-to-b
             from-black
             via-transparent
@@ -189,58 +162,167 @@
             inset-0
             rounded-3xl
           "
-              ></div>
-            </div>
-          </div>
-          <div
-            class="bg-cover bg-center w-full h-160 mt-20 rounded-3xl group"
-            :style="sshk"
-          >
-            <div
-              class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-            >
-              <div
-                class="flex flex-col absolute z-50 items-center justify-center text-center p-20 gap-y-10"
-              >
-                <div class="font-bold text-white text-4xl">
-                  Sneaker Surge HK
-                </div>
-                <div class="font-thin text-4xl text-white">
-                  Software Developer
-                </div>
-                <div class="font-thin text-4xl text-white mt-10">
-                  October 2021 - September 2022
-                </div>
-              </div>
-              <div
-                class="
-            bg-black
-            absolute
-            opacity-50
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-              ></div>
-              <div
-                class="
-            bg-gradient-to-b
-            from-black
-            via-transparent
-            to-transparent
-            absolute
-            opacity-70
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-              ></div>
-            </div>
+            ></div>
           </div>
         </div>
-      </div>
+        <div
+          class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
+          :style="stu"
+        >
+          <div
+            class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+          >
+            <div class="flex flex-col absolute z-50 items-center">
+              <div class="font-black text-white text-8xl pt-20">
+                STU
+              </div>
+              <div class="grid grid-cols-2 px-20 pt-20">
+                <div class="font-thin text-4xl text-white">
+                  Intercurrency digital wallet mobile application, won the
+                  PolyHack 2022 1st Place Winner in Fintech Category (Best
+                  Fintech Award)
+                </div>
+                <div
+                  @click="goToStu()"
+                  class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
+                >
+                  <div
+                    class="font-black text-2xl pl-10 flex flex-col items-center"
+                  >
+                    <div>VIEW</div>
+                    <div>PROJECT</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+            ></div>
+            <div
+              class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+            ></div>
+          </div>
+        </div>
+        <div
+          class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
+          :style="farmapic"
+        >
+          <div
+            class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+          >
+            <div class="flex flex-col absolute z-50 items-center">
+              <div class="font-black text-white text-8xl pt-20">
+                FARMAPLUS
+              </div>
+              <div class="grid grid-cols-2 px-20 pt-20">
+                <div class="font-thin text-4xl text-white">
+                  A prescription drugs and supplements database website in which
+                  users can look for medicine availability in a particular city,
+                  province, and/or pharmacy.
+                </div>
+                <div
+                  @click="goToFarma()"
+                  class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
+                >
+                  <div
+                    class="font-black text-2xl pl-10 flex flex-col items-center"
+                  >
+                    <div>VIEW</div>
+                    <div>PROJECT</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+            bg-black
+            absolute
+            opacity-50
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+            ></div>
+            <div
+              class="
+            bg-gradient-to-b
+            from-black
+            via-transparent
+            to-transparent
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+            ></div>
+          </div>
+        </div>
+        <div
+          class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
+          :style="archiopic"
+        >
+          <div
+            class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
+          >
+            <div class="flex flex-col absolute z-50 items-center">
+              <div class="font-black text-white text-8xl pt-20">
+                ARCHIO
+              </div>
+              <div class="grid grid-cols-2 px-20 pt-20">
+                <div class="font-thin text-4xl text-white">
+                  A corporate dummy website made with Vue 3, comprising elegant
+                  web design, animations, and responsiveness. The content theme
+                  is about an architectural studio.
+                </div>
+                <div
+                  @click="goToArchio()"
+                  class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
+                >
+                  <div
+                    class="font-black text-2xl pl-10 flex flex-col items-center"
+                  >
+                    <div>VIEW</div>
+                    <div>PROJECT</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+            bg-black
+            absolute
+            opacity-70
+            w-full
+            h-full
+            inset-0
+            rounded-3xl
+          "
+            ></div>
+          </div>
+        </div>
+      </section>
     </section>
     <div class="wrapper overflow-x-hidden overflow-y-hidden h-screen bg-fixed">
       <section
@@ -340,13 +422,13 @@
                 </div>
                 <div class="flex flex-col gap-y-10">
                   <img
-                    class="h-28 w-28"
-                    src="https://static-00.iconduck.com/assets.00/strapi-icon-512x505-3hl7a1v3.png"
+                    class="h-28 w-36"
+                    src="https://media.licdn.com/dms/image/D5612AQERySmtAVp7kQ/article-cover_image-shrink_600_2000/0/1680275682788?e=2147483647&v=beta&t=E7UEu2xOneY6O7S5Ud09E2YglQa_d9ZZGhIoZOmp9aI"
                     alt=""
                   />
                   <img
-                    class="h-28 w-28"
-                    src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
+                    class="h-20 w-36"
+                    src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png"
                     alt=""
                   />
                 </div>
@@ -370,7 +452,7 @@
                   />
                   <img
                     class="h-28 w-28"
-                    src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Circleci-icon-logo.svg/1200px-Circleci-icon-logo.svg.png"
                     alt=""
                   />
                 </div>
@@ -399,289 +481,6 @@
         ></div>
       </section>
     </div>
-    <section class="bg-kuning h-full w-screen pb-20 flex flex-col items-center">
-      <div
-        ref="leader"
-        class="font-black text-birutua text-9xl uppercase pt-20"
-      >
-        Leadership &
-      </div>
-      <div ref="entre" class="font-black text-birutua text-9xl uppercase">
-        Projects
-      </div>
-      <div
-        class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
-        :style="civtek"
-      >
-        <div
-          class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-        >
-          <div class="flex flex-col absolute z-50 items-center">
-            <div class="font-black text-white text-8xl pt-20">
-              CIVTEK
-            </div>
-            <div class="grid grid-cols-2 px-20 pt-16">
-              <div class="font-thin text-4xl text-white">
-                I founded & lead the first ever 501(c)(3) licensed non-profit
-                software development agency and a cross-uni student tech society
-                in HK, managing over 35 core team members, serving a community
-                of 120+ tech enthusiasts.
-              </div>
-              <div
-                @click="goToCivtek()"
-                class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
-              >
-                <div
-                  class="font-black text-2xl pl-10 flex flex-col items-center"
-                >
-                  <div>VIEW</div>
-                  <div>WEBSITE</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="
-            bg-black
-            absolute
-            opacity-50
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-          <div
-            class="
-            bg-gradient-to-b
-            from-black
-            via-transparent
-            to-transparent
-            absolute
-            opacity-70
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-        </div>
-      </div>
-      <div
-        class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
-        :style="permisi"
-      >
-        <div
-          class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-        >
-          <div class="flex flex-col absolute z-50 items-center">
-            <div class="font-black text-white text-6xl pt-20">
-              PERMISI (CityU Indonesian Society)
-            </div>
-            <div class="grid grid-cols-2 px-20 pt-20">
-              <div class="font-thin text-4xl text-white">
-                As the president, I manage 25 people to run programs ( averaging
-                2 events + 2 YouTube contents per month ), serving 400+
-                community members ranging from active students to alumni
-              </div>
-              <div
-                @click="goToPermisi()"
-                class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
-              >
-                <div
-                  class="font-black text-2xl pl-10 flex flex-col items-center"
-                >
-                  <div>VIEW</div>
-                  <div>WEBSITE</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="
-            bg-black
-            absolute
-            opacity-50
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-          <div
-            class="
-            bg-gradient-to-b
-            from-black
-            via-transparent
-            to-transparent
-            absolute
-            opacity-70
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-        </div>
-      </div>
-      <div
-        class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
-        :style="stu"
-      >
-        <div
-          class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-        >
-          <div class="flex flex-col absolute z-50 items-center">
-            <div class="font-black text-white text-8xl pt-20">
-              STU
-            </div>
-            <div class="grid grid-cols-2 px-20 pt-20">
-              <div class="font-thin text-4xl text-white">
-                Intercurrency digital wallet mobile application, won the
-                PolyHack 2022 1st Place Winner in Fintech Category (Best Fintech
-                Award)
-              </div>
-              <div
-                @click="goToStu()"
-                class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
-              >
-                <div
-                  class="font-black text-2xl pl-10 flex flex-col items-center"
-                >
-                  <div>VIEW</div>
-                  <div>PROJECT</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="
-            bg-black
-            absolute
-            opacity-50
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-          <div
-            class="
-            bg-gradient-to-b
-            from-black
-            via-transparent
-            to-transparent
-            absolute
-            opacity-70
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-        </div>
-      </div>
-      <div
-        class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
-        :style="farmapic"
-      >
-        <div
-          class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-        >
-          <div class="flex flex-col absolute z-50 items-center">
-            <div class="font-black text-white text-8xl pt-20">
-              FARMAPLUS
-            </div>
-            <div class="grid grid-cols-2 px-20 pt-20">
-              <div class="font-thin text-4xl text-white">
-                A prescription drugs and supplements database website in which
-                users can look for medicine availability in a particular city,
-                province, and/or pharmacy.
-              </div>
-              <div
-                @click="goToFarma()"
-                class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
-              >
-                <div
-                  class="font-black text-2xl pl-10 flex flex-col items-center"
-                >
-                  <div>VIEW</div>
-                  <div>PROJECT</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="
-            bg-black
-            absolute
-            opacity-50
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-          <div
-            class="
-            bg-gradient-to-b
-            from-black
-            via-transparent
-            to-transparent
-            absolute
-            opacity-70
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-        </div>
-      </div>
-      <div
-        class="bg-cover bg-center w-3/4 h-160 mt-20 rounded-3xl group"
-        :style="archiopic"
-      >
-        <div
-          class="group-hover:opacity-100 opacity-0 transition duration-500 ease-in-out relative flex flex-col items-center w-full h-full"
-        >
-          <div class="flex flex-col absolute z-50 items-center">
-            <div class="font-black text-white text-8xl pt-20">
-              ARCHIO
-            </div>
-            <div class="grid grid-cols-2 px-20 pt-20">
-              <div class="font-thin text-4xl text-white">
-                A corporate dummy website made with Vue 3, comprising elegant
-                web design, animations, and responsiveness. The content theme is
-                about an architectural studio.
-              </div>
-              <div
-                @click="goToArchio()"
-                class="rotate bg-opacity-0 bg-white hover:bg-opacity-100 border-2 border-white rounded-full w-48 h-48 ml-40 mt-10 flex items-center text-white hover:text-black transition duration-500 ease-in-out cursor-pointer"
-              >
-                <div
-                  class="font-black text-2xl pl-10 flex flex-col items-center"
-                >
-                  <div>VIEW</div>
-                  <div>PROJECT</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="
-            bg-black
-            absolute
-            opacity-70
-            w-full
-            h-full
-            inset-0
-            rounded-3xl
-          "
-          ></div>
-        </div>
-      </div>
-    </section>
     <section class="bg-kuning">
       <div class="flex flex-col px-20 pt-20 pb-28 text-birutua">
         <div class=" text-9xl font-black uppercase">Say hello.</div>
@@ -717,18 +516,6 @@
             <img
               class="h-20 w-20"
               src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
-              alt=""
-            />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.instagram.com/vanneswijaya/"
-            class="z-50"
-          >
-            <img
-              class="h-20 w-20"
-              src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png"
               alt=""
             />
           </a>
